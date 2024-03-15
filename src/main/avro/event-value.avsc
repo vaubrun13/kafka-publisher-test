@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "MyEventAvro",
+  "version": 1,
+  "namespace": "com.craft.demo.kafkapublishertest.avro",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "version",
+      "type": {
+        "type": "int",
+        "logicalType": "positive-int"
+      }
+    },
+    {
+      "name": "occurredAt",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String",
+        "logicalType": "iso8601-datetime-with-offset"
+      }
+    }
+  ]
+}

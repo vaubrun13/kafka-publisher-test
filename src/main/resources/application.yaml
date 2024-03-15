@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: kafka-publisher-test
+  kafka:
+    producer:
+        key-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+        value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+        client-id: kafka-publisher-test
+
